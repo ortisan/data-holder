@@ -1,0 +1,7 @@
+.gradle/
+.idea/
+build/
+data-holder.iml
+data-holder.ipr
+data-holder.iws
+.class
