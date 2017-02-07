@@ -21,4 +21,8 @@ public class RequestContext implements Context {
     public Object gettAttribute(String name) {
         return request.getAttribute(name);
     }
+
+    @Override
+    public void invalidate() {
+    }
 }

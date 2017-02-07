@@ -4,12 +4,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.mock.web.MockHttpServletRequest;
-import org.springframework.mock.web.MockHttpSession;
-import org.springframework.mock.web.MockServletContext;
 
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 
 /**
  * Created by marcelo on 21/01/17.
@@ -25,10 +21,8 @@ public class DataHolderTest {
 
     @Before
     public void initDataHolder() {
-        ServletContext application = new MockServletContext();
-        HttpSession session = new MockHttpSession();
         HttpServletRequest request = new MockHttpServletRequest();
-        dataHolder = new DataHolder(application, session, request);
+        dataHolder = new DataHolder(request);
     }
 
 

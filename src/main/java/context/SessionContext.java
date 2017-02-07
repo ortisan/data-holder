@@ -22,4 +22,8 @@ public class SessionContext implements Context {
     public Object gettAttribute(String name) {
         return session.getAttribute(name);
     }
+
+    @Override
+    public void invalidate() {
+    }
 }

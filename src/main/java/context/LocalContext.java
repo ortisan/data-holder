@@ -8,7 +8,6 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class LocalContext implements Context {
 
-    // TODO TEST
     private ThreadLocal<Map<String, Object>> threadLocal;
 
     public LocalContext() {
@@ -26,5 +25,10 @@ public class LocalContext implements Context {
     public Object gettAttribute(String name) {
         Map<String, Object> mapLocal = threadLocal.get();
         return mapLocal.get(name);
+    }
+
+    @Override
+    public void invalidate() {
+        this.threadLocal.remove();
     }
 }

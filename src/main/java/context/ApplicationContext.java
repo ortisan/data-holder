@@ -22,4 +22,8 @@ public class ApplicationContext implements Context {
     public Object gettAttribute(String name) {
         return application.getAttribute(name);
     }
+
+    @Override
+    public void invalidate() {
+    }
 }

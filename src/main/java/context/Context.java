@@ -8,4 +8,6 @@ public interface Context {
     void settAttribute(String name, Object obj);
 
     Object gettAttribute(String name);
+
+    void invalidate();
 }
