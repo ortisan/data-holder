@@ -1,6 +1,6 @@
-package filters;
+package br.com.ortiz.dataholder.filters;
 
-import holder.DataHolder;
+import br.com.ortiz.dataholder.holder.DataHolder;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;

@@ -1,4 +1,4 @@
-package holder;
+package br.com.ortiz.dataholder.holder;
 
 import org.junit.Assert;
 import org.junit.Before;

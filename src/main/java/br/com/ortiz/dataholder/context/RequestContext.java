@@ -1,4 +1,4 @@
-package context;
+package br.com.ortiz.dataholder.context;
 
 import javax.servlet.ServletRequest;
 
